@@ -1,0 +1,197 @@
+nav.navbar .dropdown:hover > .dropdown-menu {
+ display: block; 
+ text-align: right;
+} 
+@media only screen and (max-device-width: 992px){
+    nav.navbar .dropdown:hover .dropdown-menu{
+        display: none;
+    }
+}
+
+.social-icons-7 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;  
+    align-items: right;
+    padding-right:12% ;
+
+}
+.social-icons-7 a {
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 6px;
+    font-size: 26px;
+    overflow: hidden;
+    position: relative;
+    color: #808080;
+    border: 2px solid #808080;
+    transition: border-radius 0.2s linear 0s;
+    transform: rotate(45deg);
+}
+.social-icons-7 a:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #808080;
+}
+.social-icons-7 a i,
+.social-icons-7 a img {
+    transition: transform 0.2s linear 0s;
+    transform: rotate(-45deg);
+    position: relative;
+    z-index: 1;          
+}
+.social-icons-7 a img {
+    width: 20px;
+    height: 20px;
+}
+.social-icons-7 a:hover {
+    border-radius: 0px;
+    width: 25px;
+    height: 25px;
+    color: #FFF;
+    margin: 5px 11px
+}
+.social-icons-7 a:hover:after {
+    top: 0;
+    transition: all 0.2s linear 0s;
+}
+.menu{
+    padding-right: 10%;
+    display: flex;
+    justify-content: right; 
+}
+.menu a{
+    margin: 0 20px;
+}
+.line{
+    border-bottom: 1px solid #808080;
+
+}
+#name {
+    width: 100%;
+}
+#email{
+    width: 100%;
+}
+#comment{
+    width: 100%;
+    height: 150px;
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    margin-top:4% ;
+}
+#submit{
+    background-color: #FF4500;
+}
+
+.img-fluid1{
+    max-width: 80%;
+    height: auto;
+    margin: 10%;
+}
+.hover-effect-btn {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Настройка цвета и прозрачности для блока с заголовком */
+  transition: background 0.5s ease;
+}
+.hover-effect-btn:hover .overlay {
+  display: block;
+  background: rgba(0, 0, 0, 0.9); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+.title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 25%; /* Отступ сверху */
+  font-size: 1.5vw; /* Размер текста заголовка */
+  text-align: center;
+  text-transform: uppercase; /* Заглавные буквы */
+  color: white; /* Цвет заголовка */
+  z-index: 1;
+  transition: top .5s ease;
+  text-shadow: 1px 1px 1px #000;
+}
+.hover-effect-btn:hover .title {
+  top: 15%; /* Отступ сверху при наведении */
+}
+.button {
+  position: absolute;
+  width: 100%;
+  left:0;
+  top: 65%; /* Отступ сверху */
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.button a {
+  padding: 15px 40px; /* Отступ */
+  text-align: center;
+  background: #ff921e; /* Цвет кнопки */
+  color: white; /* Цвет текста */
+  border: 1px solid white; /* Ширина, стиль и цвет границы */
+  z-index: 1; 
+}
+.hover-effect-btn:hover .button {
+  opacity: 1;
+}
+        .thumb img {
+            -webkit-filter: grayscale(0);
+            filter: none;
+            border-radius: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .thumb img:hover {
+            -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+        }
+
+        .thumb {
+            padding: 0px;
+        }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5%; /* Place the button at the bottom of the page */
+    right: 2%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 0.7%; /* Some padding */
+    border-radius: 70%; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.btn{
+    margin-top: 3%;
+    margin-left: 70%;
+}
